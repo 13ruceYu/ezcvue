@@ -9,7 +9,7 @@ import AutoImport from 'unplugin-auto-import/vite'
 import Unocss from 'unocss/vite'
 
 export default defineConfig({
-  base: './', // 设置打包路径
+  base: '/ezcvue/', // 设置打包路径
   resolve: {
     alias: {
       '~/': `${path.resolve(__dirname, 'src')}/`,
