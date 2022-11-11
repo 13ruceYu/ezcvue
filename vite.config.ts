@@ -9,6 +9,7 @@ import AutoImport from 'unplugin-auto-import/vite'
 import Unocss from 'unocss/vite'
 
 export default defineConfig({
+  base: './', // 设置打包路径
   resolve: {
     alias: {
       '~/': `${path.resolve(__dirname, 'src')}/`,
@@ -46,7 +47,6 @@ export default defineConfig({
     // see unocss.config.ts for config
     Unocss(),
   ],
-
   // https://github.com/vitest-dev/vitest
   test: {
     environment: 'jsdom',
